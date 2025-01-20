@@ -38,6 +38,16 @@ func main() {
 	jimPointer.updateNameWithPointer(("pointer jimmy"))
 	jimPointer.print()
 
+	name := "bill"
+
+	namePointer := &name
+
+	fmt.Println(&namePointer)
+	printPointer(namePointer)
+}
+
+func printPointer(namePointer *string) {
+	fmt.Println(&namePointer)
 }
 
 // Pass by pointer reference
